@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>힘이 들 땐 하늘을 보세요</title>
+	<style type="text/css">
+		body {background: black;}
+		#sky {width: 1100px; height: 600px; background:url('sky1.jpeg'); background-size: cover; display: block; margin: auto;}
+	</style>
+</head>
+<body>
+	<div id="sky"></div>
+	<script type="text/javascript">
+
+		var currentSky = 1;
+
+		sky.onclick = function(){
+
+			if(currentSky == 1){
+				sky.style.background = "url('sky2.jpeg')";
+				currentSky = 2;	
+			}else if(currentSky ==2){
+				sky.style.background = "url('sky3.jpeg')";
+				currentSky = 3;	
+			}else if (currentSky ==3) {
+				sky.style.background = "url('sky4.jpeg')";
+				currentSky = 4;
+			}else if (currentSky ==4) {
+				sky.style.background = "url('sky5.jpeg')";
+				currentSky = 5;
+			}else if (currentSky ==5) {
+				sky.style.background = "url('sky6.jpeg')";
+				currentSky = 6;
+			}else if (currentSky ==6) {
+				sky.style.background = "url('sky7.jpeg')";
+				currentSky = 7;
+			}else if (currentSky ==7) {
+				sky.style.background = "url('sky1.jpeg')";
+				currentSky = 1;
+			}
+			sky.style.backgroundSize = "cover";
+		}
+	</script> 
+		<audio controls autoplay style="display: block; margin: auto; margin-top: 20px;">
+	 		 <source src="jazzhiphop.mp3" type="audio/mpeg">
+		</audio>
+</body>
+</html>
